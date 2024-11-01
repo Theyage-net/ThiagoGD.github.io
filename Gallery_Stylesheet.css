@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.img-gallery img{
+    width: 15em ;
+    height: 15em;
+    object-fit: cover;
+    object-position: center;
+    border-style: solid;
+    border-color: skyblue;
+    transition: 0.5s ease;
+    margin-bottom: 30px
+}
+        
+.img-gallery img:hover{
+    transform: scale(0.9);
+}
+    
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap; 30px
+}
+
+footer{
+    text-align: center;
+    padding: 1%;
+    margin: 0;
+    background-color: skyblue;
+    color: azure
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic:wght@100;200;300;400;500;600&display=swap');
+body{
+    background-color: white
+    
+}
+
+section{
+    margin: 2rem
+
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-portrait{
+    border-radius: 100px
+}
+
+.home-portrait img{
+    width: 45vw;
+    border-radius: 150px;
+    position: relative;
+    animation: 0.5 ease
+    
+}
+
+.home-content h1{
+    position: relative;
+    font-size: 4em;
+    animation: 0.5 ease
+}
+
+.home-content h3{
+    position: relative;
+    font-size: 3em;
+    word-spacing:inherit;
+    animation: 0.5 ease
+
+}
+
+.changing-text span{
+    
+}
+
+.changing-text span::before{
+    content: "";
+    animation: words 10s ease infinite;
+}
+
+.changing-text span::after{
+    content: ""
+}
+
+@keyframes words{
+    0%, 25%{
+        content:"Illustrator"
+    }
+    26%, 50%{
+        content:"Brand Designer"
+    }
+    51%, 75%{
+        content:"________________"
+    }
+    76%, 100%{
+        content:"Graphic Designer"
+    }
+}
+
+
+span {
+    color: skyblue;
+    font-weight: 700
+}

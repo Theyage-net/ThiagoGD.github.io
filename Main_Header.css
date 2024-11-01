@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: "Didact Gothic", "sans-serif";
+    text-decoration: none;
+    box-sizing: border-box
+}
+
+header{
+    background-color: aliceblue;
+    padding: inherit;
+    display: flex;
+    justify-content: space-between;
+    font-size: 175%;
+    padding: 1em;  
+}
+
+.logo{
+    color:skyblue;
+    transition: 0.5s ease;
+    font-weight: 550
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    border-bottom: transparent
+}
+
+nav a{
+    color: black;
+    margin-left: 2rem;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active{
+    color: skyblue;
+    border-bottom: 3px solid skyblue;
+    font-weight: 500px
+}
